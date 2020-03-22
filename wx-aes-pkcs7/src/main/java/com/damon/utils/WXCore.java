@@ -14,10 +14,14 @@ public class WXCore {
 	
 	private static final String WATERMARK = "watermark";
 	private static final String APPID = "appid";
+
 	/**
 	 * 解密数据
+	 * @param appId
+	 * @param encryptedData 需要解密的数据
+	 * @param sessionKey
+	 * @param iv
 	 * @return
-	 * @throws Exception
 	 */
 	public static String decrypt(String appId, String encryptedData, String sessionKey, String iv){
 		String result = "";
